@@ -1,0 +1,40 @@
+{
+    "Forgot Your Password?": "¿Olvidaste tu contraseña?",
+    "Remember Me": "Recordarme",
+    "E-Mail Address": "E-mail",
+    "Password": "Contraseña",
+    "Reset Password": "Restablecer Contraseña",
+    "Send Password Reset Link": "Enviar",
+    "Set Password": "Definir Contraseña",
+    "Not Found": "Página no encontrada",
+
+    "Reset Password Notification": "Definir/Restablecer contraseña",
+    "You are receiving this email because we received a password reset request for your account.": "Has recibido este mensaje porque se ha solicitado restablecer la contraseña de tu cuenta de acceso.",
+    "This password reset link will expire in :count minutes.": "Este enlace expira en :count minutos.",
+    "If you did not request a password reset, no further action is required.": "Si no has solicitado restablecer la contraseña, no es necesario tomar acción alguna.",
+    "If you're having trouble clicking the \":actionText\" button, copy and paste the URL below\ninto your web browser:": "Si el enlace de \":actionText\" no funciona adecuadamente, copia y pega la siguiente liga en tu navegador web:",
+
+    "Create Password Notification": "Define tu contraseña",
+    "You are receiving this email because we received a request to set a password for your account.": "Has recibido este mensaje porque se ha solicitado definir la contraseña de tu cuenta de acceso.",
+    "If you did not request to set a password, no further action is required.": "Si no has solicitado definir la contraseña, no es necesario tomar acción alguna.",
+
+    "Welcome Notification": "Bienvenido",
+
+    "Hello!": "¡Hola!",
+    "Whoops!": "¡Ups!",
+    "Regards": "Saludos",
+    "All rights reserved.": "Todos los derechos reservados",
+    "Confirm Password": "Confirmación contraseña",
+    "If you did not receive the email":"Si no recibiste un email",
+
+    "Please enter an email address.": "Por favor ingresa una dirección de email.",
+
+    "No commitments have been defined": "No se han definido compromisos",
+    "No entries found": "No se encontraron registros",
+    "No relationship found": "No existe relación",
+
+    "Your session expired due to inactivity. Please login again.": "La sesión ha expirado. Favor de acceder de nuevo al sistema.",
+
+    "Enroll in program": "Agregar a programa",
+    "Enroll new candidates": "Agregar Candidato(s)"
+}

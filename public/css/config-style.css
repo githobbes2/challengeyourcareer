@@ -1,0 +1,264 @@
+@charset "UTF-8";
+/*!
+
+ */
+
+.no-border {
+	border: 0;
+	box-shadow: none;
+}
+
+.system-notification {
+	margin: 0 16px 10px !important;
+}
+
+.no-padding { padding: 0 !important; }
+
+.no-overflow { overflow: hidden !important; }
+
+.bb { border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+
+.cover-img {
+	background-image: url("/photos/dashboard.jpg");
+	background-repeat: no-repeat, no-repeat;
+	background-position: right;
+	background-size: cover;
+}
+
+.welcome-img {
+	background-image: url("/photos/welcome.jpg");
+	background-repeat: no-repeat, no-repeat;
+	background-position: left;
+	background-size: cover;
+}
+
+.inline-tooltip {
+	font-size: 1.2em;
+    position: absolute;
+    margin-left: 5px;
+}
+
+h4 { color: #ea7a1d; }
+
+h4.cover-title {
+	font-size: 2em;
+	font-weight: bold;
+	color: #FFF;
+}
+
+.pageTitle h1 {
+	font-size: 1em;
+	margin-top: 8px;
+}
+
+.bordered-row-btm {
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+	min-height: 40px;
+}
+.bordered-row-btm::after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 1px;
+	background:
+	#dfe4e7;
+}
+
+div#appCapsule div.section:first-child, div#inpage-appCapsule div.section:first-child {
+	min-height: 77vh;
+}
+
+.accordion-header button span:first-child {
+	width: 100%;
+	text-align:left;
+}
+
+.modal-header .left .icon, .modal-header .right .icon {
+	font-size: 30px;
+}
+
+.image-wrapper .icon {
+	font-size: 2em;
+	color: #ea7a1d;
+}
+
+.fav-person {
+	color: #f73853;
+}
+
+.bg-gray {
+	background-color: #AAA;
+	color: #FFF;
+}
+
+#header {
+	display: none;
+}
+
+.link-listview-before > li {
+padding: 0;
+min-height: auto;
+}
+.link-listview-before > li a {
+padding: 8px 16px 8px 36px;
+min-height: 50px;
+display: flex;
+width: 100%;
+align-items: center;
+justify-content: space-between;
+color: #282D33 !important;
+}
+.link-listview-before > li a:before {
+content: "\f3d1";
+font-family: "Ionicons";
+font-size: 18px;
+position: absolute;
+left: 16px;
+height: 18px;
+top: 50%;
+margin-top: -9px;
+line-height: 1em;
+color: #A9ABAD;
+opacity: 0.6;
+}
+.link-listview-before > li a:active {
+background: rgba(223, 228, 231, 0.3);
+}
+
+.mobile-pageTitle {
+font-size: 18px;
+font-weight: 500;
+padding: 10px 10px 0 68px; }
+.mobile-pageTitle .logo {
+max-height: 40px; }
+
+.card-body-accordion {
+	padding: 2px 8px !important;
+}
+
+.card-body-accordion > .accordion .accordion-header .btn {
+	font-weight: 500;
+}
+
+.light-teal-bg {
+	background: #f0fcfd;
+}
+
+.light-green-bg {
+	background: #d0f7d2;
+}
+
+#inpage-appCapsule {
+padding: 15px 0 0 0;
+background-color: #f8f9fa;
+}
+
+.label-employeeName {
+	text-transform: capitalize;
+}
+
+/* Desktop or vertical tablet */
+@media (min-width: 992px) {
+
+	#header {
+		display: block;
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    z-index: 1002;
+	    width: 240px;
+	    height: 100%;
+	    border: none;
+	    overflow: hidden;
+	    box-shadow: 0 0 15px rgba(0, 0, 0, 0.065);
+	    background-color:#edeff1;
+	}
+
+	#appCapsule, .appHeader, .chatFooter {
+		margin-left: 240px;
+	}
+
+	#appCapsule {
+		padding-bottom: 0 !important;
+	}
+
+	#mobile-menu {
+		display: none;
+	}
+
+	.appBottomMenu {
+		display: none;
+	}
+
+	.btn {
+		max-width: 350px;
+	}
+
+	.modal, .extraHeader {
+		left: 240px !important;
+		width: calc(100% - 240px);
+	}
+
+	.mobile-only {
+		display: none !important;
+	}
+}
+
+/* Displays where columns still display side by side */
+@media (min-width: 576px) {
+	.svg-fix-size {
+		height: 200px;
+		width: auto;
+	}
+}
+/* Mobile devices */
+/* HBS 2020.05 width was 991px. Need to validate */
+@media (max-width: 767px) {
+	body {
+		user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+	}
+
+	.desktop-only {
+		display: none !important;
+	}
+
+	.mob-mt-1 {
+		margin-top: 10px !important;
+	}
+
+	.mob-mt-5 {
+		margin-top: 3rem !important;
+	}
+}
+
+.card-img-content {
+	margin-left: 25%;
+	width: 50%;
+	margin-bottom: 20px;
+}
+
+/* IE10+ CSS fixes */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+	div.col-sm-2 .card-img-content {
+		max-height: 90px;
+	}
+
+	label {
+		width: 100%;
+	}
+
+	.form-check-input {
+		position: relative !important;
+		margin: 0 0.5em 0 -1em !important;
+	}
+}

@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+label.rating svg:not(.super-happy, .happy, .neutral, .sad, .super-sad) {
+	fill: #b8b8b8;
+	height: 3.6rem;
+	width: 3.6rem;
+	margin: 0.2rem;
+}
+
+label.rating svg.small {
+	height: 1.5rem;
+	width: 1.5rem;
+}
+
+#radios label {
+	position: relative;
+}
+
+input[type="radio"] {
+	position: absolute;
+	opacity: 0;
+}
+
+input[type="radio"] + svg {
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+input + svg {
+	cursor: pointer;
+}
+
+input[class="super-happy"]:hover + svg,
+input[class="super-happy"]:checked + svg,
+input[class="super-happy"]:focus + svg,
+svg.super-happy {
+	fill: rgb(0, 109, 217);
+}
+
+input[class="happy"]:hover + svg,
+input[class="happy"]:checked + svg,
+input[class="happy"]:focus + svg,
+svg.happy {
+	fill: rgb(0, 204, 79);
+}
+
+input[class="neutral"]:hover + svg,
+input[class="neutral"]:checked + svg,
+input[class="neutral"]:focus + svg,
+svg.neutral {
+	fill: rgb(232, 214, 0);
+}
+
+input[class="sad"]:hover + svg,
+input[class="sad"]:checked + svg,
+input[class="sad"]:focus + svg,
+svg.sad {
+	fill: rgb(229, 132, 0);
+}
+
+input[class="super-sad"]:hover + svg,
+input[class="super-sad"]:checked + svg,
+input[class="super-sad"]:focus + svg,
+svg.super-sad {
+	fill: rgb(239, 42, 16);
+}
